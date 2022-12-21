@@ -15,5 +15,5 @@ export const handler: Handlers<any> = {
 };
 
 export default function Greet(props: PageProps<any>) {
-  return <div><img src={props.data.data[0].url} alt="generated image" /> {props.data[0].url}</div>;
+  return <div><img src={props.data.data[0].url} alt="generated image" /> {props.data.data[0].url}</div>;
 }
