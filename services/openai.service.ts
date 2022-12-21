@@ -1,8 +1,5 @@
-import { Configuration, OpenAIApi } from 'npm:openai@3.1.0';
-const configuration = new Configuration({
-    apiKey: Deno.env.get('openai-key'),
-});
+import { OpenAI } from "https://deno.land/x/openai_mini@0.2.0/mod.ts";
 
-export default function (): OpenAIApi {
-    return new OpenAIApi(configuration);
+export default function (): OpenAI {
+    return new OpenAI(Deno.env.get('openai-key') || '');
 }

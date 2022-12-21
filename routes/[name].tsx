@@ -6,7 +6,8 @@ export const handler: Handlers<any> = {
     const response = await openaiService().createImage({
       prompt: `a person with name ${ctx.params.name}`,
       n: 1,
-      size: '512x512'
+      size: '512x512',
+      response_format: 'url'
     });
 
     return await ctx.render(response);
