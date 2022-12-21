@@ -39,12 +39,6 @@ export default function Home(props: PageProps<any>) {
         <title>Image creator</title>
       </Head>
       <div class="p-4 mx-auto max-w-screen-md">
-        <img
-          src={img}
-          class="w-32 h-32"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
-
         <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-lg text-center">
             <h1 class="text-2xl font-bold sm:text-3xl">Genera una imagen!</h1>
@@ -94,6 +88,12 @@ export default function Home(props: PageProps<any>) {
               </button>
             </div>
           </form>
+        </div>
+        <div className="mx-auto flex justify-center">
+          <img
+            src={img}
+            alt="the fresh logo: a sliced lemon dripping with juice"
+          />
         </div>
       </div>
     </>
